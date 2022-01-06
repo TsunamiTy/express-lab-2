@@ -38,6 +38,10 @@ app.get('/tip/:total/:tipPercentage', (req, res) => {
 //     res.send(`Here's the details for ${req.params.firstName} ${req.params.lastName}`);
 // });
 
+// 8 ball attempt
+app.get('/magic/*', (req, res) => {
+    res.render("It is certain")
+});
 
 // tell the app to listen for requests
 app.listen(3000, () => {
